@@ -1,5 +1,6 @@
 import React from 'react'
 import {Badge, Container, FormControl, Navbar, Dropdown, Nav } from 'react-bootstrap'
+import {FiShoppingCart} from 'react-icons/fi'
 
 export const Header = () => {
   return (
@@ -14,8 +15,10 @@ export const Header = () => {
             <Nav>
                 <Dropdown alignRight>
                     <Dropdown.Toggle variant='success'>
-                        <Badge>{10}</Badge>
+                        <FiShoppingCart color="white" fontSize="25px" />
+                        <Badge bg="none">{10}</Badge>
                     </Dropdown.Toggle>
+                    
                     <Dropdown.Menu style={{minWidth:350}}>
                         <span style={{padding:10}}>Cart is Empty</span>
                     </Dropdown.Menu>
