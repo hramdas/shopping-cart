@@ -1,13 +1,12 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap'
-import { useState } from 'react';
 import { Rating } from './Rating';
 import { CartState } from '../context/Context';
-import { type } from '@testing-library/user-event/dist/type';
+
 
 export const Filters = () => {
-    const [rate, setRate] = useState(3);
-     const {productState : {byStock, byFastDelivery, sort, byRating}, productDispatch} = CartState()
+     const {productState : {byStock, byFastDelivery, sort, byRating, searchQuery}, productDispatch} = CartState()
+     console.log(byStock, byFastDelivery, sort, byRating)
 
   return (
     <div className='filters'>
@@ -71,7 +70,10 @@ export const Filters = () => {
             })} style={{cursor :"pointer" }} />
         </span>
        
-        <Button variant="light">Clear Filters</Button> 
+        <Button variant="light" onClick={()=>
+        productDispatch({
+            type : "CLEAR_FILTERS"
+        })}>Clear Filters</Button> 
     </div>
   )
 }

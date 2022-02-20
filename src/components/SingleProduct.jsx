@@ -44,7 +44,7 @@ export const SingleProduct = ({prod}) => {
 
             </Card.Body>
         </Card>
-        {prod.name}
     </div>
   )
 }
+
