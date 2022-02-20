@@ -19,3 +19,10 @@ npm install
 ```
 npm run start
 ```
+
+## Home
+<img src="https://i.ibb.co/mCfVXfR/Screenshot-2022-02-20-111736.jpg" alt="Home" />
+
+## Cart
+
+<img src="https://i.ibb.co/H4xvqx0/Screenshot-2022-02-20-111815.jpg" alt="Cart" />
